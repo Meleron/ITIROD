@@ -70,10 +70,11 @@
     background-color: #e1f4f3;
     margin: 5% ;
     padding: 5px;
+    transition: 0.3s;
 }
 
 .post:hover{
-    border: solid 3px black;
+    border: dashed 3px #e1f4f3;
 }
 
 .post-text{
@@ -82,7 +83,11 @@
 
 .new-post{
     margin: 3%;
-    border: solid;
+    border: solid 3px black;
+}
+
+.new-post:hover{
+    border: solid 3px black;
 }
 
 .main{
