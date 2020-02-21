@@ -1,0 +1,126 @@
+.like-btn{
+    border: solid 1px #ADD45C;
+    background-color: #ADD45C;
+    border-radius: 5px;
+    padding-right: 0;
+    width: 100%;
+    display: inline;
+    transition: 0.3s;
+}
+
+.like-btn:hover{
+    background-color: #47AF4C;
+}
+
+.dislike-btn{
+    border: solid 1px #C70039;
+    background-color: #C70039;
+    border-radius: 5px;
+    padding-left: 0;
+    width: 100%;
+    display: inline;
+    color: #e1f4f3;
+    transition: 0.3s;
+}
+
+.dislike-btn:hover{
+    background-color: #e6000e;
+}
+
+.post-btn{
+    border: solid 1px #BA6A4B;
+    background-color: #BA6A4B;
+    border-radius: 5px;
+    padding-right: 0;
+    width: 100%;
+    display: inline;
+    transition: 0.3s;
+}
+
+.post-btn:hover{
+    background-color: #8E4940;
+    color: #e1f4f3;
+}
+
+.comment-btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment-btn{
+    border: solid 3px #cccccc;
+    background-color: #ece84b;
+    border-radius: 5px;
+    padding-right: 0;
+    width: 100%;
+    display: inline;
+    transition: 0.3s;
+}
+
+.comment-btn:hover{
+    background-color: #d7ca00;
+    border: solid 3px #555;
+}
+
+.post{
+    color: black;
+    border: dashed 3px black;
+    border-radius: 3px;
+    background-color: #e1f4f3;
+    margin: 5% ;
+    padding: 5px;
+}
+
+.post:hover{
+    border: solid 3px black;
+}
+
+.post-text{
+    text-align: center;
+}
+
+.new-post{
+    margin: 3%;
+    border: solid;
+}
+
+.main{
+    background-color: #333333;
+}
+
+input[type=text]{
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    outline: none;
+    border: solid 3px #ccc;
+    transition: 0.5s;
+
+}
+
+input[type=text]:focus{
+    border: solid 3px #555;
+}
+
+.input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label[for="file"]{
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: solid 3px #ccc;
+    transition: 0.5s;
+}
+
+label[for="file"]:hover{
+    border: solid 3px #555;
+}
