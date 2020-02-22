@@ -1,16 +1,27 @@
 <head>
     <meta charset="UTF-8">
-    <title>externalStyle.html</title>
+    <title>Meleron</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet"
           type="text/css"
           href="style.css"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
 <body class="main">
-<div>
-    <div class="post">
+<div class="header">
+    <img src="ricardo.gif" style="margin-left: 20px" align="left" width="50em" height="50em">
+    <div style="margin-left: auto">
+        <button class="header-btn">User settings</button>
+        <a href="#add-post">
+            <button class="header-btn">Add post</button>
+        </a>
+    </div>
+</div>
+<div class="main-content">
+    <div class="post" style="margin-top: 0">
         <p class="post-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi assumenda cupiditate debitis dolore
             doloremque eaque eos esse exercitationem illo illum ipsum iure laudantium mollitia nobis numquam, obcaecati
@@ -20,12 +31,39 @@
             tempore tenetur totam, ut veniam veritatis voluptate. Ab delectus dolor dolore esse in inventore laudantium
             maxime nam nisi optio provident quaerat quos, rem saepe similique soluta suscipit vitae?
         </p>
-        <div class="row">
-            <div class="col-6">
-                <button class="like-btn">Like it</button>
+        <div class="rate-container">
+            <label style="margin: 0">
+                <input type="range" class="custom-range" min="1" max="5" step="1">
+                <button class="rate-btn">Rate it</button>
+            </label>
+        </div>
+        <hr/>
+        <div class="comments-container">
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
             </div>
-            <div class="col-6">
-                <button class="dislike-btn">Dislike it</button>
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
+            </div>
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
+            </div>
+        </div>
+        <div class="row comment-btn-container">
+            <div class="col-10">
+                <label style="width: 100%; margin: 0">
+                    <input type="text" placeholder="Your comment">
+                </label>
+            </div>
+
+            <div class="col-2">
+                <button class="comment-btn">Comment it</button>
             </div>
         </div>
     </div>
@@ -39,12 +77,90 @@
             tempore tenetur totam, ut veniam veritatis voluptate. Ab delectus dolor dolore esse in inventore laudantium
             maxime nam nisi optio provident quaerat quos, rem saepe similique soluta suscipit vitae?
         </p>
-        <div class="row">
-            <div class="col-6">
-                <button class="like-btn">Like it</button>
+        <div class="rate-container">
+            <label style="margin: 0">
+                <input type="range" class="custom-range" min="1" max="5" step="1">
+                <button class="rate-btn">Rate it</button>
+            </label>
+        </div>
+        <hr/>
+        <div class="comments-container">
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
             </div>
-            <div class="col-6">
-                <button class="dislike-btn">Dislike it</button>
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
+            </div>
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
+            </div>
+        </div>
+        <div class="row comment-btn-container">
+            <div class="col-10">
+                <label style="width: 100%; margin: 0">
+                    <input type="text" placeholder="Your comment">
+                </label>
+            </div>
+
+            <div class="col-2">
+                <button class="comment-btn">Comment it</button>
+            </div>
+        </div>
+    </div>
+    <div class="post">
+        <p class="post-text" style="display: inline">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi assumenda cupiditate
+            debitis dolore
+            doloremque eaque eos esse exercitationem illo illum ipsum iure laudantium mollitia nobis numquam,
+            obcaecati
+            pariatur porro quam quas quasi qui quis ratione reprehenderit rerum sequi soluta vero! Ab accusamus
+            consectetur dolorum expedita illum ipsam maiores, modi nihil optio quam recusandae rerum, similique
+            sint
+            velit voluptatum. Aperiam aut beatae delectus earum iure maiores obcaecati optio, quis quo quod
+            reiciendis
+            tempore tenetur totam, ut veniam veritatis voluptate. Ab delectus dolor dolore esse in inventore
+            laudantium
+            maxime nam nisi optio provident quaerat quos, rem saepe similique soluta suscipit vitae?
+        </p>
+        <div class="rate-container">
+            <label style="margin: 0">
+                <input type="range" class="custom-range" min="1" max="5" step="1">
+                <button class="rate-btn">Rate it</button>
+            </label>
+        </div>
+        <hr/>
+        <div class="comments-container">
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
+            </div>
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
+            </div>
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
+            </div>
+        </div>
+        <div class="row comment-btn-container">
+            <div class="col-10">
+                <label style="width: 100%; margin: 0">
+                    <input type="text" placeholder="Your comment">
+                </label>
+            </div>
+
+            <div class="col-2">
+                <button class="comment-btn">Comment it</button>
             </div>
         </div>
     </div>
@@ -58,25 +174,30 @@
             tempore tenetur totam, ut veniam veritatis voluptate. Ab delectus dolor dolore esse in inventore laudantium
             maxime nam nisi optio provident quaerat quos, rem saepe similique soluta suscipit vitae?
         </p>
-        <div class="row">
-            <div class="col-6">
-                <button class="like-btn">Like it</button>
+        <div class="rate-container">
+            <label style="margin: 0">
+                <input style="" type="range" class="custom-range" min="1" max="5" step="1">
+                <button class="rate-btn">Rate it</button>
+            </label>
+        </div>
+        <hr/>
+        <div class="comments-container">
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
             </div>
-            <div class="col-6">
-                <button class="dislike-btn">Dislike it</button>
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
+            </div>
+            <div class="comment-container">
+                <button class="dislike-btn"></button>
+                <button class="like-btn"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ratione.</p>
             </div>
         </div>
-    </div>
-    <div class="post">
-        <p class="post-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi assumenda cupiditate debitis dolore
-            doloremque eaque eos esse exercitationem illo illum ipsum iure laudantium mollitia nobis numquam, obcaecati
-            pariatur porro quam quas quasi qui quis ratione reprehenderit rerum sequi soluta vero! Ab accusamus
-            consectetur dolorum expedita illum ipsam maiores, modi nihil optio quam recusandae rerum, similique sint
-            velit voluptatum. Aperiam aut beatae delectus earum iure maiores obcaecati optio, quis quo quod reiciendis
-            tempore tenetur totam, ut veniam veritatis voluptate. Ab delectus dolor dolore esse in inventore laudantium
-            maxime nam nisi optio provident quaerat quos, rem saepe similique soluta suscipit vitae?
-        </p>
         <div class="row comment-btn-container">
             <div class="col-10">
                 <label style="width: 100%; margin: 0">
@@ -88,7 +209,7 @@
             </div>
         </div>
     </div>
-    <div class="post new-post">
+    <div class="post new-post" id="add-post">
         <div style="width: 100%">
             <div>
                 <label style="width: 100%">
@@ -109,5 +230,8 @@
             </div>
         </div>
     </div>
+</div>
+<div class="footer">
+    <p>&copy; Meleron 228-2020</p>
 </div>
 </body>

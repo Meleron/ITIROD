@@ -1,33 +1,37 @@
-.like-btn{
+.like-btn {
     border: solid 1px #ADD45C;
     background-color: #ADD45C;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
+    border-radius: 50%;
     padding-right: 0;
-    width: 100%;
+    width: 1em;
+    height: 1em;
     display: inline;
     transition: 0.3s;
 }
 
-.like-btn:hover{
+.like-btn:hover {
     background-color: #47AF4C;
 }
 
-.dislike-btn{
+.dislike-btn {
     border: solid 1px #C70039;
     background-color: #C70039;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
+    border-radius: 50%;
     padding-left: 0;
-    width: 100%;
+    width: 1em;
+    height: 1em;
     display: inline;
     color: #e1f4f3;
     transition: 0.3s;
 }
 
-.dislike-btn:hover{
+.dislike-btn:hover {
     background-color: #e6000e;
 }
 
-.post-btn{
+.post-btn {
     border: solid 1px #BA6A4B;
     background-color: #BA6A4B;
     border-radius: 5px;
@@ -37,7 +41,7 @@
     transition: 0.3s;
 }
 
-.post-btn:hover{
+.post-btn:hover {
     background-color: #8E4940;
     color: #e1f4f3;
 }
@@ -48,7 +52,7 @@
     align-items: center;
 }
 
-.comment-btn{
+.comment-btn {
     border: solid 3px #cccccc;
     background-color: #ece84b;
     border-radius: 5px;
@@ -58,43 +62,111 @@
     transition: 0.3s;
 }
 
-.comment-btn:hover{
+.comment-btn:hover {
     background-color: #d7ca00;
     border: solid 3px #555;
 }
 
-.post{
+.comments-container {
+    text-align: left;
+    font-size: 0.8em;
+    margin-top: -16px;
+}
+
+.comment-container {
+    /*display: inline-block;*/
+}
+
+.post {
     color: black;
-    border: dashed 3px black;
+    border: solid 3px black;
     border-radius: 3px;
     background-color: #e1f4f3;
-    margin: 5% ;
+    margin: 5%;
     padding: 5px;
     transition: 0.3s;
-}
-
-.post:hover{
-    border: dashed 3px #e1f4f3;
-}
-
-.post-text{
     text-align: center;
 }
 
-.new-post{
+.post:hover {
+    border: solid 3px #e1f4f3;
+}
+
+.post-text {
+    /*text-align: center;*/
+}
+
+.new-post {
     margin: 3%;
     border: solid 3px black;
 }
 
-.new-post:hover{
+.new-post:hover {
     border: solid 3px black;
 }
 
-.main{
-    background-color: #333333;
+.rate-container {
+    /*margin-top: 4px;*/
+    margin-bottom: -12px;
 }
 
-input[type=text]{
+.rate-btn{
+    border: solid 3px #DEE2E6;
+    background-color: #e1f4f3;
+    border-radius: 5px;
+    padding-right: 0;
+    width: 100%;
+    height: auto;
+    display: inline;
+    transition: 0.5s;
+}
+
+.rate-btn:hover {
+    border: solid 3px #555;
+}
+
+.main {
+    background-color: #333333;
+}
+.main-content{
+    margin-top: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    /*padding: 10px 20px 0 0;*/
+    margin-bottom: 0px;
+    padding: 10px;
+    text-align: right;
+}
+
+.header-btn{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: lighter;
+    background-color: #333;
+    color: #e1f4f3;
+    border: solid 1px #e1f4f3;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.header-btn:hover{
+    /*padding: 0.25% 0.5%;*/
+    border: dashed 1px;
+}
+
+.footer{
+    text-align: center;
+    font-weight: lighter;
+    color: #e1f4f3;
+}
+
+input[type=text] {
     width: 100%;
     border-radius: 5px;
     display: block;
@@ -105,7 +177,7 @@ input[type=text]{
 
 }
 
-input[type=text]:focus{
+input[type=text]:focus {
     border: solid 3px #555;
 }
 
@@ -118,7 +190,7 @@ input[type=text]:focus{
     z-index: -1;
 }
 
-label[for="file"]{
+label[for="file"] {
     padding: 5px 10px;
     border-radius: 10px;
     text-align: center;
@@ -126,6 +198,22 @@ label[for="file"]{
     transition: 0.5s;
 }
 
-label[for="file"]:hover{
+label[for="file"]:hover {
     border: solid 3px #555;
 }
+
+br {
+    color: #000;
+}
+
+p {
+    display: inline;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: #BA6A4B;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+     background: #B3D7FF;
+ }
