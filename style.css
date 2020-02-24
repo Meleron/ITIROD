@@ -38,6 +38,7 @@
     padding-right: 0;
     width: 100%;
     display: inline;
+    animation: post-button-blink 3s infinite ease-in-out;
     transition: 0.3s;
 }
 
@@ -110,7 +111,7 @@
     margin-bottom: -12px;
 }
 
-.rate-btn{
+.rate-btn {
     border: solid 3px #DEE2E6;
     background-color: #e1f4f3;
     border-radius: 5px;
@@ -128,11 +129,12 @@
 .main {
     background-color: #333333;
 }
-.main-content{
+
+.main-content {
     margin-top: 0;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -144,7 +146,7 @@
     text-align: right;
 }
 
-.header-btn{
+.header-btn {
     margin-top: 1%;
     margin-bottom: 1%;
     font-weight: lighter;
@@ -155,12 +157,12 @@
     transition: 0.3s;
 }
 
-.header-btn:hover{
+.header-btn:hover {
     /*padding: 0.25% 0.5%;*/
     border: dashed 1px;
 }
 
-.footer{
+.footer {
     text-align: center;
     font-weight: lighter;
     color: #e1f4f3;
@@ -215,11 +217,42 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input[type=range]::-webkit-slider-thumb:hover {
-     background: #B3D7FF;
- }
+    background: #B3D7FF;
+}
 
-body{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
+}
+
+@keyframes post-button-blink {
+    from {
+        background-color: #BA6A4B;
+        color: black;
+    }
+
+    50%{
+        background-color: #8E4940;
+        color: #e1f4f3;
+    }
+
+    to {
+        background-color: #BA6A4B;
+        color: black;
+    }
+
+}
+
+/*body {*/
+/*    -webkit-background-clip: text;*/
+/*    -webkit-animation: random 0.1s infinite linear;*/
+/*}*/
+
+@keyframes  random {
+    15% { background-color: red; }
+    30% { background-color: yellow; }
+    45% { background-color: green; }
+    60% { background-color: blue; }
+    75% { background-color: white; }
 }
